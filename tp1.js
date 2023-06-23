@@ -19,7 +19,13 @@ function extractValues(data) {
 */
 
 function arrayToLengthCounters(array) {
+  const cont = {};
 
+  for (i = 0; i < array.length; i++){
+    const element = array[i];
+    cont[element] = element.length
+  }
+  return cont
 }
 
 /*  
