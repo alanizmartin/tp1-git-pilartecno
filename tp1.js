@@ -37,9 +37,11 @@ function arrayToLengthCounters(array) {
 */
 
 function findKeysInCommon(objeto1, objeto2) {
-
+  const keys1 = Object.keys(objeto1);
+  return keys1.filter(key => key in objeto2);
 }
-
+const commonKeys = findKeysInCommon;
+console.log(commonKeys);
 
 // Llamamos a las funciones y mostramos los resultados
 
