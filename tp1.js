@@ -6,6 +6,7 @@
 */
 
 function extractValues(data) {
+  return Object.values(data);
 }
 
 
